@@ -3,8 +3,8 @@ on: push
 jobs:
   build-and-upload:
     runs-on: ubuntu-latest
+    container: texlive/texlive:latest
     steps:
-      - run: sudo apt-get -y install latexmk
       - uses: actions/checkout@v6
         with:
           sparse-checkout: |
