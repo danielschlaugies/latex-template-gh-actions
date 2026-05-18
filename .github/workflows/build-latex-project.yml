@@ -1,7 +1,5 @@
 name: LaTeX build
-on:
-  push
-  workflow_dispatch
+on: [push, workflow_dispatch]
 jobs:
   build-and-upload:
     runs-on: ubuntu-latest
